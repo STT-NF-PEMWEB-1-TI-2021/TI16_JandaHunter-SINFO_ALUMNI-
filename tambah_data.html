@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<!--
+This is a starter template page. Use this page to start your new project from
+scratch. This page gets rid of all links and provides the needed markup only.
+-->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> SIUMNI </title>
+
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="dist/css/adminlte.min.css">
+</head>
+<body class="hold-transition sidebar-mini">
+<div class="wrapper">
+  <!-- Main Sidebar Container -->
+  <aside class="main-sidebar sidebar-dark-primary elevation-4">
+    <!-- Brand Logo -->
+    <a href="index3.html" class="brand-link">
+      <img src="dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
+      <span class="brand-text font-weight-light">SIUMNI-Backend</span>
+    </a>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <!-- Sidebar user panel (optional) -->
+      <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+        <div class="icon">
+          <i class="fa fa-user-o"></i>
+        </div>
+        <div class="info">
+         <span class="text-inline">          
+           <img src="dist/img/avatar5.png" alt="">
+           <a href="#" class="d-block h4">Ahmad Admin</a>
+         </span>
+        </div>
+      </div>
+
+      <!-- SidebarSearch Form -->
+      <div class="form-inline">
+        <div class="input-group" data-widget="sidebar-search">
+          <input class="form-control form-control-sidebar" type="search" placeholder="Search" aria-label="Search">
+          <div class="input-group-append">
+            <button class="btn btn-sidebar">
+              <i class="fas fa-search fa-fw"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sidebar Menu -->
+      <nav class="mt-2">
+        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+          <!-- Add icons to the links using the .nav-icon class
+               with font-awesome or any other icon font library -->
+          <li class="nav-item menu-open">
+            <a href="#" class="nav-link active">
+              <p>
+                Dashboard
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="#" class="nav-link active">
+                  <p>Alumni</p>
+                </a>
+              </li>
+              
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="far fa-clipboard"></i>
+              <p>
+                Loker
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="fas fa-users"></i>
+              <p>
+                Mitra NF
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">
+              <i class="fas fa-sign-out-alt"></i>  
+              Logout
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <!-- /.sidebar-menu -->
+    </div>
+    <!-- /.sidebar -->
+  </aside>
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-2">
+          <div class="col-sm-6">
+            <h1 class="m-0">Data Mahasiswa</h1>
+          <div>
+            <label for="">Angkatan:</label>
+            <select class="form-select" aria-label="Default select example">
+              <option value="2021">2021</option>
+              <option value="2022">2020</option>
+              <option value="2023">2019</option>
+            </select>
+          </div>
+          </div><!-- /.col -->
+          <div class="col-sm-6">
+            <ol class="breadcrumb float-sm-right">
+              <li class="breadcrumb-item"><a href="#">Alumni <i class="fas fa-arrow-right"></i></a></li>
+            </ol>
+          </div><!-- /.col -->
+        </div><!-- /.row -->
+      </div><!-- /.container-fluid -->
+    </div>
+    <!-- /.content-header -->
+
+    <!-- Main content -->
+    <div class="container justify-content-md-center">
+      <legend>Daftarkan Alumni</legend>
+      <div class="form-group row">
+        <label for="text" class="col-3 col-form-label">Cari Nama Alumni :</label> 
+        <div class="col-9">
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <div class="input-group-text">
+                <i class="fa fa-search"></i>
+              </div>
+            </div> 
+            <input id="text" name="text" placeholder="Search" type="text" class="form-control">
+          </div>
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="text1" class="col-3 col-form-label">Program Studi :</label> 
+        <div class="col-9">
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <div class="input-group-text">
+                <i class="fa fa-graduation-cap"></i>
+              </div>
+            </div> 
+            <input id="text1" name="text1" placeholder="Program Studi" type="text" class="form-control">
+          </div>
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="text2" class="col-3 col-form-label">Tahun Masuk :</label> 
+        <div class="col-9">
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <div class="input-group-text">
+                <i class="fa fa-calendar-week"></i>
+              </div>
+            </div> 
+            <input id="text2" name="text2" placeholder="Tahun Masuk" type="text" class="form-control">
+          </div>
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="text3" class="col-3 col-form-label">Tahun Lulus :</label> 
+        <div class="col-9">
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <div class="input-group-text">
+                <i class="fas fa-calendar-week"></i>
+              </div>
+            </div> 
+            <input id="text3" name="text3" placeholder="Tahun Lulus" type="text" class="form-control">
+          </div>
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="text4" class="col-3 col-form-label">Alamat Linkedin :</label> 
+        <div class="col-9">
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <div class="input-group-text">
+                <i class="fab fa-linkedin"></i>
+              </div>
+            </div> 
+            <input id="text4" name="text4" placeholder="Alamat Linkedin" type="text" class="form-control">
+          </div>
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="text5" class="col-3 col-form-label">Pekerjaan :</label> 
+        <div class="col-9">
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <div class="input-group-text">
+                <i class="fas fa-briefcase"></i>
+              </div>
+            </div> 
+            <input id="text5" name="text5" placeholder="Pekerjaan" type="text" class="form-control">
+          </div>
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="text6" class="col-3 col-form-label">Alamat Kantor :</label> 
+        <div class="col-9">
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <div class="input-group-text">
+                <i class="far fa-building"></i>
+              </div>
+            </div> 
+            <input id="text6" name="text6" placeholder="Alamat Kantor" type="text" class="form-control">
+          </div>
+        </div>
+      </div> 
+      <div class="form-group row">
+        <div class="offset-3 col-9">
+          <button name="submit" type="submit" class="btn btn-primary">Simpan</button>
+        </div>
+      </div>
+  </div>
+</div>
+  <!-- /.content-wrapper -->
+
+  <!-- Control Sidebar -->
+  <aside class="control-sidebar control-sidebar-dark">
+    <!-- Control sidebar content goes here -->
+    <div class="p-3">
+      <h5>Title</h5>
+      <p>Sidebar content</p>
+    </div>
+  </aside>
+  <!-- /.control-sidebar -->
+
+  <!-- Main Footer -->
+    <!-- To the right -->
+    
+    <!-- Default to the left -->
+    
+<!-- ./wrapper -->
+
+<!-- REQUIRED SCRIPTS -->
+
+<!-- jQuery -->
+<script src="plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- AdminLTE App -->
+<script src="dist/js/adminlte.min.js"></script>
+</body>
+</html>
