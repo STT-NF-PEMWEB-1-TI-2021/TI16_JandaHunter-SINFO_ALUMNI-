@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	 <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Login</title>
+
+
+	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+
+ <header>
+    <div class="container-fluid">
+            <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
+                <a class="navbar-brand" href="#"><img src="assets/img/logo.png">SIUMNI STT NF</a>
+                <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-align-right text-light"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <div class="ml-auto">
+                         <div class="navbar-nav nav-item">
+                                <a class="nav-link " href="index.html">Home <span class="sr-only">(current)</span></a>
+                                <a class="nav-link" href="inde.html">Sapa Alumni</a>
+                                <a class="nav-link" href="index.html">Berita Alumni</a>
+                                <a class="nav-link" href="index.html">Loker</a>
+                                <a class="nav-link" href="login.html">Login</a>
+                                <!-- <a class="nav-link" href="#booking">Booking</a> -->
+                                <!-- <a class="nav-link" href="#testimonial">Testimonial</a> -->
+                        </div>
+                    </div>  
+                </div>
+            </nav>
+        </div>
+  </header>
+<div class="container container-form">
+        <div class="card login-form">
+            <div class="card-body">
+              <h2 class="card-title">Login</h2>
+                  <div class="alert alert-danger" role="alert" style="display:none">
+                             Username / Password Salah !
+                        </div>
+              <form>
+                <div class="mb-2">
+                  <label for="exampleInputEmail1" class="form-label">Username</label>
+                  <input type="text" class="form-control" id="username" aria-describedby="emailHelp" placeholder="Your Username">
+                </div>
+                <div class="mb-2">
+                  <label for="exampleInputPassword1" class="form-label">Password</label>
+                  <input type="password" class="form-control" id="password" placeholder="Your Password">
+                </div>
+                <button type="button" class="btn btn-success btn-login" onclick="login(username.value, password.value)">Login</button>
+                <div class="mt-3">
+                    <label>Belum punya akun?<a href="register.html" class="link"> Daftar di sini</a></label>
+                </div>
+              </form>
+            
+            </div>
+          </div>
+      </div>
+<script type="text/javascript" src="assets/js/script.js"></script>
+</body>
+</html>

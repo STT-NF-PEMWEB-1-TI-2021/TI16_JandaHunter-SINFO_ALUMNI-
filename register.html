@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<!--
+This is a starter template page. Use this page to start your new project from
+scratch. This page gets rid of all links and provides the needed markup only.
+-->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Registrasi - SIUMNI</title>
+
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="assets/plugins/fontawesome-free/css/all.min.css">
+  <!-- <link rel="stylesheet" href="assets/dist/css/adminlte.min.css"> -->
+  <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="hold-transition layout-top-nav">
+<div class="wrapper">
+
+ <header>
+    <div class="container-fluid">
+            <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
+                <a class="navbar-brand" href="#"><img src="assets/img/logo.png">SIUMNI STT NF</a>
+                <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-align-right text-light"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <div class="ml-auto">
+                         <div class="navbar-nav nav-item">
+                                <a class="nav-link " href="index.html">Home <span class="sr-only">(current)</span></a>
+                                <a class="nav-link" href="inde.html">Sapa Alumni</a>
+                                <a class="nav-link" href="index.html">Berita Alumni</a>
+                                <a class="nav-link" href="index.html">Loker</a>
+                                <a class="nav-link" href="login.html">Login</a>
+                                <!-- <a class="nav-link" href="#booking">Booking</a> -->
+                                <!-- <a class="nav-link" href="#testimonial">Testimonial</a> -->
+                        </div>
+                    </div>  
+                </div>
+            </nav>
+        </div>
+  </header>
+  <main>
+        <section class="register">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-12">
+                    <form>
+                      <div class="login-logo" class="mt-4">
+                        <h3 class="text-center mb-5">Registrasi User</h3>
+                        <div class="alert alert-danger" role="alert" style="display:none">
+                             Lengkapi data-data anda!
+                        </div>
+                      </div>
+                      <div class="form-group row">
+                        <label for="carialumni" class="col-4 col-form-label">Cari Alumni</label> 
+                        <div class="col-8">
+                          <div class="input-group">
+                            <div class="input-group-prepend">
+                              <div class="input-group-text">
+                               <i class="fa fa-search"></i>
+                             </div>
+                           </div> 
+                           <input id="carialumni" name="carialumni" placeholder="Search" type="text" class="form-control">
+                         </div>
+                       </div>
+                     </div>
+                     <div class="form-group row">
+                       <label for="nama" class="col-4 col-form-label">Nama Lengkap</label> 
+                       <div class="col-8">
+                         <input id="nama" name="nama" placeholder="Nama Alumni" type="text" class="form-control">
+                         <span id="text_error" style="display:none;">Batas maksimal 30 karakter</span>
+                       </div>
+                     </div>
+                     <div class="form-group row">
+                       <label for="prodi" class="col-4 col-form-label">Asal Prodi</label> 
+                       <div class="col-8">
+                         <input id="prodi" name="prodi" placeholder="Asal Prodi Alumni" type="text" class="form-control">
+                         <span id="text_error" style="display:none;" >Masukkan isi dengan benar !</span>
+                       </div>
+                     </div>
+                     <div class="form-group row">
+                       <label for="username" class="col-4 col-form-label">Username</label> 
+                       <div class="col-8">
+                         <input id="username" name="username" placeholder="Username" type="text" class="form-control">
+                         <span id="text_error" style="display:none;" >Format username tidak sesuai!</span>
+                       </div>
+                     </div>
+                     <div class="form-group row">
+                       <label for="pw" class="col-4 col-form-label">Password</label> 
+                       <div class="col-8">
+                         <input id="pw" name="pw" placeholder="Masukkan Password" type="password" class="form-control">
+                         <span id="text_error" style="display:none;">6-20 karakter, setidaknya 1 huruf besar, 1 huruf kecil, dan berisi 1 angka</span>
+                       </div>
+                     </div>
+                     <div class="form-group row">
+                       <label for="cekpw" class="col-4 col-form-label">Cek Password</label> 
+                       <div class="col-8">
+                         <input id="cekpw" name="cekpw" placeholder="Ulangi Password" type="password" class="form-control">
+                         <span id="text_error" style="display:none;" >Password tidak sesuai</span>
+                       </div>
+                     </div> 
+                     <div class="form-group row">
+                       <div class="offset-4 col-8 d-flex justify-content-end">
+                         <a name="submit"  class="btn btn-danger mr-2" href="login.html">Batal</a>
+                         <button name="submit" type="button" class="btn btn-primary" onclick="validation(nama.value, prodi.value,username.value, pw.value, cekpw.value)">Daftar</button>
+                       </div>
+                     </div>  
+                    </form>
+                    </div>
+                  </div>
+          </div>
+      </section>
+    </main>
+<!-- REQUIRED SCRIPTS -->
+
+<!-- jQuery -->
+<script src="assets/plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- AdminLTE App -->
+<script src="assets/dist/js/adminlte.min.js"></script>
+<script type="text/javascript" src="assets/js/script.js"></script>
+</body>
+</html>
