@@ -50,17 +50,16 @@ function login(username, password){
 		text_err.style.display="block";
 	}
 }
-// function input(nama, email, jam, tujuan, jumlah){
-// 		let table=document.querySelector(".table");
-// 		let row=table.insertRow(1)
-// 		let cell1=row.insertCell(0)
-// 		let cell2=row.insertCell(1)
-// 		let cell3=row.insertCell(2)
-// 		let cell4=row.insertCell(3)
-// 		let cell5=row.insertCell(4)
-// 		cell1.innerHTML=nama
-// 		cell2.innerHTML=email
-// 		cell3.innerHTML=jam
-// 		cell4.innerHTML=tujuan
-// 		cell5.innerHTML=jumlah
-// 	}
+
+let nav=document.querySelector(".nav-item");
+        let nav_link=nav.getElementsByTagName("a");
+        console.log(nav)
+        for(var i=0;i<nav_link.length;i++){
+            nav_link[i].addEventListener("click",function() {
+                var act=document.querySelector(".nav-link.active");
+                console.log(act[0])
+                act.className=act.className.replace(" active","");
+                this.className+=" active"
+                console.log(this)
+            })
+        }
